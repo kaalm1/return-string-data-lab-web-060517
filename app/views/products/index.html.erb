@@ -1,1 +1,14 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% @products.each do |product| %>
+    <%= product.name %>
+    <%= truncate product.description %>
+    <%= button_to "More Info", product_info_path(product) %>
+    <% end %>
+  </body>
+</html>

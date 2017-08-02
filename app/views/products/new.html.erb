@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%= form_for :product do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_field :price %>
+    <%= f.text_field :inventory %>
+    <%= f.text_field :description %>
+    <%= f.submit %>
+    <% end %>
+  </body>
+</html>
